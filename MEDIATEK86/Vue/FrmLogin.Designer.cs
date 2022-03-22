@@ -1,6 +1,9 @@
 ﻿
 namespace MEDIATEK86.Vue
 {
+    /// <summary>
+    /// Classe pour la page Login
+    /// </summary>
     partial class FrmLogin
     {
         /// <summary>

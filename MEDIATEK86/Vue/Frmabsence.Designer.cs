@@ -1,6 +1,9 @@
 ﻿
 namespace MEDIATEK86.Vue
 {
+    /// <summary>
+    /// Classe pour la page des absences
+    /// </summary>
     partial class Frmabsence
     {
         /// <summary>
