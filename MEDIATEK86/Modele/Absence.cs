@@ -12,11 +12,11 @@ namespace MEDIATEK86.Modele
     public class Absence
     {
 
-        private readonly int IDPERSONNEL;
-        private readonly int IDMOTIF;
-        private readonly DateTime datedebut;
-        private readonly DateTime datefin;
-        private readonly string motif;
+        private int IDPERSONNEL;
+        private int IDMOTIF;
+        private DateTime datedebut;
+        private DateTime datefin;
+        private string motif;
 
         /// <summary>
         /// Constructeur : valorise les propriétés
@@ -34,5 +34,27 @@ namespace MEDIATEK86.Modele
             this.datefin = datefin;
             this.motif = motif;
         }
+
+        /// <summary>
+        /// permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
+        /// </summary>
+        public int iDPERSONNEL { get => IDPERSONNEL; set => IDPERSONNEL = value; }
+        /// <summary>
+        /// permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
+        /// </summary>
+        public int iDMOTIF { get => IDMOTIF; set => IDMOTIF = value; }
+        /// <summary>
+        /// permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
+        /// </summary>
+        public DateTime Datedebut { get => datedebut; set => datedebut = value; }
+        /// <summary>
+        /// permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
+        /// </summary>
+        public DateTime Datefin { get => datefin; set => datefin = value; }
+        /// <summary>
+        /// permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
+        /// </summary>
+        public string Motif { get => motif; set => motif = value; }
+
     }
 }

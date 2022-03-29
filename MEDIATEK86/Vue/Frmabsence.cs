@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MEDIATEK86.controleur;
+using MEDIATEK86.Modele;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,19 +14,28 @@ namespace MEDIATEK86.Vue
 {
     public partial class Frmabsence : Form
     {
-        public Frmabsence()
+        private Controle controle;
+
+        BindingSource bsAbsence = new BindingSource();
+        BindingSource bsmotifs = new BindingSource();
+
+
+        private bool show;
+
+        /// <summary>
+        /// Constructeur de classe
+        /// </summary>
+        public Frmabsence(Controle controle)
         {
             InitializeComponent();
+            this.controle = controle;
+            Init();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        private void bttnAjout1_Click(object sender, EventArgs e)
         {
 
         }
     }
+
 }

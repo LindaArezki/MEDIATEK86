@@ -11,19 +11,28 @@ namespace MEDIATEK86.Modele
     /// </summary>
     public class Service
     {
-        private readonly int IDSERVICE;
-        private readonly string NOM;
+        private int iDSERVICE;
+        private string nOM;
 
         /// <summary>
         /// Constructeur : valorise les propriétés
         /// </summary>
-        /// <param name="IDSERVICE"></param>
-        /// <param name="NOM"></param>
-        public Service(int IDSERVICE, string NOM)
+        /// <param name="iDSERVICE"></param>
+        /// <param name="nOM"></param>
+        public Service(int iDSERVICE, string nOM)
         {
-            this.IDSERVICE = IDSERVICE;
-            this.NOM = NOM;
+            this.iDSERVICE = iDSERVICE;
+            this.nOM = NOM;
         }
+
+        /// <summary>
+        ///  permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
+        /// </summary>
+        public int IDSERVICE { get => iDSERVICE; set => iDSERVICE = value; }
+        /// <summary>
+        ///  permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
+        /// </summary>
+        public string NOM { get => nOM; set => nOM = value;  }
     }
 }
 

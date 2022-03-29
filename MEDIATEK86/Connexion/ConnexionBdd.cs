@@ -45,6 +45,11 @@ namespace MEDIATEK86.connexion
             }
         }
 
+        internal static ConnexionBdd GetInstance(object connectionString)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Crée une instance unique de la classe
         /// </summary>
@@ -86,7 +91,8 @@ namespace MEDIATEK86.connexion
         /// Exécute une requête type "select" et valorise le curseur
         /// </summary>
         /// <param name="stringQuery">requête select</param>
-        public void ReqSelect(string stringQuery)
+        /// <param name="p"></param>
+        public void ReqSelect(string stringQuery, object p)
         {
             try
             {

@@ -11,8 +11,8 @@ namespace MEDIATEK86.Modele
     /// </summary>
     public class Motif
     {
-        private readonly int IDMOTIF;
-        private readonly string LIBELLE;
+        private int IDMOTIF;
+        private string LIBELLE;
 
         /// <summary>
         /// Constructeur, valorise les propriétés.
@@ -23,6 +23,18 @@ namespace MEDIATEK86.Modele
         {
             this.IDMOTIF = IDMOTIF;
             this.LIBELLE = LIBELLE;
+       
         }
+
+        /// <summary>
+        ///  permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
+        /// </summary>
+        public int iDMOTIF { get => IDMOTIF; set => IDMOTIF = value; }
+        /// <summary>
+        ///  permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
+        /// </summary>
+        public string lIBELLE { get => LIBELLE; set => LIBELLE = value; }
+
     }
+
 }
