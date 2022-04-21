@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,28 +12,28 @@ namespace MEDIATEK86.Modele
     /// </summary>
     public class Service
     {
-        private int iDSERVICE;
-        private string nOM;
+        private int IDSERVICE;
+        private string NOM;
 
         /// <summary>
         /// Constructeur : valorise les propriétés
         /// </summary>
-        /// <param name="iDSERVICE"></param>
-        /// <param name="nOM"></param>
-        public Service(int iDSERVICE, string nOM)
+        /// <param name="IDSERVICE"></param>
+        /// <param name="NOM"></param>
+        public Service(int IDSERVICE, string NOM)
         {
-            this.iDSERVICE = iDSERVICE;
-            this.nOM = NOM;
+            this.IDSERVICE =IDSERVICE;
+            this.NOM = NOM;
         }
 
         /// <summary>
         ///  permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
         /// </summary>
-        public int IDSERVICE { get => iDSERVICE; set => iDSERVICE = value; }
+        public int IDservice { get => IDSERVICE; set => IDSERVICE = value; }
         /// <summary>
         ///  permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
         /// </summary>
-        public string NOM { get => nOM; set => nOM = value;  }
+        public string Nom { get => NOM; set => NOM = value;  }
     }
 }
 

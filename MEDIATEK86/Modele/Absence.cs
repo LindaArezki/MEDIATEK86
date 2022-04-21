@@ -13,44 +13,48 @@ namespace MEDIATEK86.Modele
     {
 
         private int IDPERSONNEL;
-        private int IDMOTIF;
-        private DateTime datedebut;
-        private DateTime datefin;
+        private DateTime DATEDEBUT;
+        private DateTime DATEFIN;
+        private int IDMOTIF; 
         private string motif;
+
 
         /// <summary>
         /// Constructeur : valorise les propriétés
         /// </summary>
         /// <param name="IDPERSONNEL"></param>
+        /// <param name="DATEDEBUT"></param>
+        /// <param name="DATEFIN"></param>
         /// <param name="IDMOTIF"></param>
-        /// <param name="datedebut"></param>
-        /// <param name="datefin"></param>
         /// <param name="motif"></param>
-        public Absence(int IDPERSONNEL, int IDMOTIF, DateTime datedebut, DateTime datefin, string motif)
+        public Absence(int IDPERSONNEL,DateTime DATEDEBUT, DateTime DATEFIN,int IDMOTIF,string motif)
         {
             this.IDPERSONNEL = IDPERSONNEL;
+            this.DATEDEBUT = DATEDEBUT;
+            this.DATEFIN = DATEFIN;
             this.IDMOTIF = IDMOTIF;
-            this.datedebut = datedebut;
-            this.datefin = datefin;
             this.motif = motif;
         }
+
+        
 
         /// <summary>
         /// permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
         /// </summary>
-        public int iDPERSONNEL { get => IDPERSONNEL; set => IDPERSONNEL = value; }
+        public int Idpersonnel { get => IDPERSONNEL; set => IDPERSONNEL = value; }
         /// <summary>
         /// permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
         /// </summary>
-        public int iDMOTIF { get => IDMOTIF; set => IDMOTIF = value; }
+        public DateTime Datedebut { get => DATEDEBUT; set => DATEFIN = value; } 
         /// <summary>
         /// permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
         /// </summary>
-        public DateTime Datedebut { get => datedebut; set => datedebut = value; }
+        public DateTime Datefin { get => DATEFIN; set => DATEFIN = value; }
         /// <summary>
         /// permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
         /// </summary>
-        public DateTime Datefin { get => datefin; set => datefin = value; }
+        public int Idmotif { get => IDMOTIF; set => IDMOTIF = value; }
+       
         /// <summary>
         /// permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
         /// </summary>

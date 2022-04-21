@@ -78,15 +78,15 @@ namespace MEDIATEK86.Vue
             // 
             this.TxtTEL.Location = new System.Drawing.Point(807, 46);
             this.TxtTEL.Name = "TxtTEL";
-            this.TxtTEL.Size = new System.Drawing.Size(207, 29);
+            this.TxtTEL.Size = new System.Drawing.Size(276, 29);
             this.TxtTEL.TabIndex = 7;
             // 
             // cmbxServices
             // 
             this.cmbxServices.FormattingEnabled = true;
-            this.cmbxServices.Location = new System.Drawing.Point(1116, 46);
+            this.cmbxServices.Location = new System.Drawing.Point(1133, 43);
             this.cmbxServices.Name = "cmbxServices";
-            this.cmbxServices.Size = new System.Drawing.Size(238, 32);
+            this.cmbxServices.Size = new System.Drawing.Size(305, 32);
             this.cmbxServices.TabIndex = 9;
             // 
             // LlbTEL
@@ -103,7 +103,7 @@ namespace MEDIATEK86.Vue
             // 
             this.lblServices.AutoSize = true;
             this.lblServices.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServices.Location = new System.Drawing.Point(1110, 8);
+            this.lblServices.Location = new System.Drawing.Point(1138, 8);
             this.lblServices.Name = "lblServices";
             this.lblServices.Size = new System.Drawing.Size(123, 34);
             this.lblServices.TabIndex = 4;
@@ -111,44 +111,44 @@ namespace MEDIATEK86.Vue
             // 
             // bttnModifier
             // 
-            this.bttnModifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnModifier.Location = new System.Drawing.Point(14, 772);
+            this.bttnModifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnModifier.Location = new System.Drawing.Point(35, 808);
             this.bttnModifier.Name = "bttnModifier";
-            this.bttnModifier.Size = new System.Drawing.Size(267, 67);
+            this.bttnModifier.Size = new System.Drawing.Size(331, 67);
             this.bttnModifier.TabIndex = 10;
             this.bttnModifier.Text = "MODIFIER UN PERSONNEL";
             this.bttnModifier.UseVisualStyleBackColor = true;
-            this.bttnModifier.Click += new System.EventHandler(this.bttnModifier_Click);
+            this.bttnModifier.Click += new System.EventHandler(this.BttnModifier_Click);
             // 
             // bttnajoutperso
             // 
-            this.bttnajoutperso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnajoutperso.Location = new System.Drawing.Point(315, 766);
+            this.bttnajoutperso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnajoutperso.Location = new System.Drawing.Point(412, 805);
             this.bttnajoutperso.Name = "bttnajoutperso";
-            this.bttnajoutperso.Size = new System.Drawing.Size(289, 73);
+            this.bttnajoutperso.Size = new System.Drawing.Size(301, 73);
             this.bttnajoutperso.TabIndex = 11;
             this.bttnajoutperso.Text = "AJOUTER UN PERSONNEL";
             this.bttnajoutperso.UseVisualStyleBackColor = true;
-            this.bttnajoutperso.Click += new System.EventHandler(this.bttnajoutperso_Click);
+            this.bttnajoutperso.Click += new System.EventHandler(this.Bttnajoutperso_Click);
             // 
             // bttnSupp
             // 
             this.bttnSupp.BackColor = System.Drawing.Color.LavenderBlush;
-            this.bttnSupp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnSupp.Location = new System.Drawing.Point(652, 767);
+            this.bttnSupp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnSupp.Location = new System.Drawing.Point(767, 803);
             this.bttnSupp.Name = "bttnSupp";
-            this.bttnSupp.Size = new System.Drawing.Size(341, 72);
+            this.bttnSupp.Size = new System.Drawing.Size(332, 72);
             this.bttnSupp.TabIndex = 12;
             this.bttnSupp.Text = "SUPPRIMER UN PERSONNEL";
             this.bttnSupp.UseVisualStyleBackColor = false;
-            this.bttnSupp.Click += new System.EventHandler(this.bttnSupp_Click);
+            this.bttnSupp.Click += new System.EventHandler(this.BttnSupp_Click);
             // 
             // BttnVoirabsence
             // 
-            this.BttnVoirabsence.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BttnVoirabsence.Location = new System.Drawing.Point(1047, 767);
+            this.BttnVoirabsence.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttnVoirabsence.Location = new System.Drawing.Point(1133, 794);
             this.BttnVoirabsence.Name = "BttnVoirabsence";
-            this.BttnVoirabsence.Size = new System.Drawing.Size(622, 81);
+            this.BttnVoirabsence.Size = new System.Drawing.Size(388, 81);
             this.BttnVoirabsence.TabIndex = 13;
             this.BttnVoirabsence.Text = "VOIR LES ABSENCES";
             this.BttnVoirabsence.UseVisualStyleBackColor = true;
@@ -157,13 +157,12 @@ namespace MEDIATEK86.Vue
             // dgvPersonnels
             // 
             this.dgvPersonnels.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPersonnels.Location = new System.Drawing.Point(14, 98);
+            this.dgvPersonnels.Location = new System.Drawing.Point(53, 106);
             this.dgvPersonnels.Name = "dgvPersonnels";
             this.dgvPersonnels.RowHeadersWidth = 72;
             this.dgvPersonnels.RowTemplate.Height = 31;
-            this.dgvPersonnels.Size = new System.Drawing.Size(1725, 654);
+            this.dgvPersonnels.Size = new System.Drawing.Size(1468, 646);
             this.dgvPersonnels.TabIndex = 0;
-          
             // 
             // lblPrénom
             // 
@@ -179,7 +178,7 @@ namespace MEDIATEK86.Vue
             // 
             this.txtPrénom.Location = new System.Drawing.Point(255, 46);
             this.txtPrénom.Name = "txtPrénom";
-            this.txtPrénom.Size = new System.Drawing.Size(223, 29);
+            this.txtPrénom.Size = new System.Drawing.Size(187, 29);
             this.txtPrénom.TabIndex = 6;
             // 
             // TxtNom
@@ -201,16 +200,16 @@ namespace MEDIATEK86.Vue
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(517, 46);
+            this.txtEmail.Location = new System.Drawing.Point(486, 46);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(223, 29);
+            this.txtEmail.Size = new System.Drawing.Size(269, 29);
             this.txtEmail.TabIndex = 8;
             // 
             // lblEMAIL
             // 
             this.lblEMAIL.AutoSize = true;
             this.lblEMAIL.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEMAIL.Location = new System.Drawing.Point(524, 0);
+            this.lblEMAIL.Location = new System.Drawing.Point(480, 0);
             this.lblEMAIL.Name = "lblEMAIL";
             this.lblEMAIL.Size = new System.Drawing.Size(103, 34);
             this.lblEMAIL.TabIndex = 3;
@@ -221,7 +220,7 @@ namespace MEDIATEK86.Vue
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(1946, 912);
+            this.ClientSize = new System.Drawing.Size(1565, 912);
             this.Controls.Add(this.panel2);
             this.Name = "FrmPersonnels";
             this.Text = "FrmPersonnels";

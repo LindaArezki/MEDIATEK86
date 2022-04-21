@@ -12,6 +12,9 @@ namespace MEDIATEK86.Vue
 {
     public partial class FrmLogin : Form
     {
+        /// <summary>
+        /// Ouverture de la frmlogin
+        /// </summary>
         public FrmLogin()
         {
             InitializeComponent();

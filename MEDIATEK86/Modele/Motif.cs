@@ -29,11 +29,11 @@ namespace MEDIATEK86.Modele
         /// <summary>
         ///  permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
         /// </summary>
-        public int iDMOTIF { get => IDMOTIF; set => IDMOTIF = value; }
+        public int Idmotif { get => IDMOTIF; set => IDMOTIF = value; }
         /// <summary>
         ///  permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
         /// </summary>
-        public string lIBELLE { get => LIBELLE; set => LIBELLE = value; }
+        public string Libelle { get => LIBELLE; set => LIBELLE = value; }
 
     }
 

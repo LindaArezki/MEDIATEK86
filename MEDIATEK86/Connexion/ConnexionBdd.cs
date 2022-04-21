@@ -1,4 +1,4 @@
-﻿using MySqlConnector;
+﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -45,10 +45,6 @@ namespace MEDIATEK86.connexion
             }
         }
 
-        internal static ConnexionBdd GetInstance(object connectionString)
-        {
-            throw new NotImplementedException();
-        }
 
         /// <summary>
         /// Crée une instance unique de la classe
@@ -74,10 +70,15 @@ namespace MEDIATEK86.connexion
             try
             {
                 command = new MySqlCommand(stringQuery, connection);
-                foreach (KeyValuePair<string, object> parameter in parameters)
-                {
-                    command.Parameters.Add(new MySqlParameter(parameter.Key, parameter.Value));
+                if(!(parameters is null))
+                { 
+                    foreach (KeyValuePair<string, object> parameter in parameters) 
+                    {
+                       command.Parameters.Add(new MySqlParameter(parameter.Key, parameter.Value));
+                    }
+                    
                 }
+                
                 command.Prepare();
                 command.ExecuteNonQuery();
             }
@@ -91,12 +92,21 @@ namespace MEDIATEK86.connexion
         /// Exécute une requête type "select" et valorise le curseur
         /// </summary>
         /// <param name="stringQuery">requête select</param>
-        /// <param name="p"></param>
-        public void ReqSelect(string stringQuery, object p)
+        /// <param name="parameters"></param>
+
+        public void ReqSelect(string stringQuery,Dictionary< string, object> parameters)
         {
             try
             {
                 command = new MySqlCommand(stringQuery, connection);
+                if (!(parameters is null))
+                {
+                    foreach (KeyValuePair<string, object> parameter in parameters)
+                    {
+                        command.Parameters.Add(new MySqlParameter(parameter.Key, parameter.Value));
+                    }
+                }
+                command.Prepare();
                 reader = command.ExecuteReader();
             }
             catch (Exception e)
