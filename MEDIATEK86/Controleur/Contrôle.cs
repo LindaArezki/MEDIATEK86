@@ -11,10 +11,11 @@ namespace MEDIATEK86.controleur
     /// </summary>
     public class Controle
     {
+        private FrmLogin frmLogin;
         /// <summary>
         /// Vue de la frmpersonnel
         /// </summary>
-       public FrmPersonnels frmPersonnels;
+       private FrmPersonnels frmPersonnels;
        /// <summary>
        /// Vue de la frmbsence
        /// </summary>
@@ -25,17 +26,38 @@ namespace MEDIATEK86.controleur
         /// </summary>
         public Controle()
         {
-            frmPersonnels = new FrmPersonnels(this);
-            frmPersonnels.ShowDialog();
+            frmLogin = new FrmLogin(this);
+            frmLogin.ShowDialog();
 
         }
-   
 
-          /// <summary>
-          /// Récupère et retourne les infos du personnel provenant de la BDD
-          /// </summary>
-          /// <returns>liste des personnels</returns>
-            public List<Personnel> GetLesPersonnels()
+        /// <summary>
+        /// Demande la vérification de l'authentification
+        /// Si correct, alors ouvre la fenêtre principale
+        /// </summary>
+        /// <param name="login"></param>
+        /// <param name="pwd"></param>
+        /// <returns></returns>
+        public Boolean ControleAuthentification(string login, string pwd)
+        {
+            if (Accesdonnée.ControleAuthentification(login, pwd))
+            {
+                frmLogin.Hide();
+                frmPersonnels = new FrmPersonnels(this);
+                frmPersonnels.ShowDialog();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Récupère et retourne les infos du personnel provenant de la BDD
+        /// </summary>
+        /// <returns>liste des personnels</returns>
+        public List<Personnel> GetLesPersonnels()
             {
                 return Accesdonnée.GetLesPersonnels();
             }

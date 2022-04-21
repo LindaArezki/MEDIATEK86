@@ -59,7 +59,7 @@ namespace MEDIATEK86.Vue
             this.lblid.Size = new System.Drawing.Size(147, 36);
             this.lblid.TabIndex = 1;
             this.lblid.Text = "Identifiant";
-            this.lblid.Click += new System.EventHandler(this.lblid_Click);
+         
             // 
             // lblmdp
             // 
@@ -80,6 +80,7 @@ namespace MEDIATEK86.Vue
             this.btnConnecter1.TabIndex = 3;
             this.btnConnecter1.Text = "SE CONNECTER";
             this.btnConnecter1.UseVisualStyleBackColor = true;
+            this.btnConnecter1.Click += new System.EventHandler(this.btnConnecter1_Click);
             // 
             // textBoxID
             // 
@@ -94,7 +95,7 @@ namespace MEDIATEK86.Vue
             this.textBoxMDP.Name = "textBoxMDP";
             this.textBoxMDP.Size = new System.Drawing.Size(371, 29);
             this.textBoxMDP.TabIndex = 5;
-            this.textBoxMDP.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+        
             // 
             // FrmLogin
             // 

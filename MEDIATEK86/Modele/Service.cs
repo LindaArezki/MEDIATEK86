@@ -33,7 +33,17 @@ namespace MEDIATEK86.Modele
         /// <summary>
         ///  permet l'utilisation 'getter' et 'setter' en lien avec le DataGridview
         /// </summary>
-        public string Nom { get => NOM; set => NOM = value;  }
+        public string Nom { get => NOM; }
+
+        /// <summary>
+        /// Definit le service à afficher.
+        /// </summary>
+        /// <returns></returns>
+
+        public override string ToString()
+        {
+            return this.Nom;
+        }
     }
 }
 

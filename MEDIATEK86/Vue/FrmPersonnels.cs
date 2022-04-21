@@ -67,7 +67,7 @@ namespace MEDIATEK86.Vue
         }
 
         /// <summary>
-        /// Methode pour le bouttonmoddifer pour modifier un personnel
+        /// Methode pour le boutton modifer pour modifier un personnel
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -127,7 +127,7 @@ namespace MEDIATEK86.Vue
             {
 
                 Personnel personnel = (Personnel)BsPersonnels.List[BsPersonnels.Position];
-                if (MessageBox.Show("Voulez-vous supprimer supprimer ce personnel ?", "Etes-vous sur ?", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                if (MessageBox.Show("Voulez-vous supprimer ce personnel ?", "Etes-vous sur ?", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
                     controle.DelunPersonnel(personnel);
                     Remplirdgvpersonnels();
