@@ -11,6 +11,9 @@ namespace MEDIATEK86.Modele
     /// </summary>
     public class Motif
     {
+        /// <summary>
+        /// Déclaration des propriétés
+        /// </summary>
         private int IDMOTIF;
         private string LIBELLE;
 

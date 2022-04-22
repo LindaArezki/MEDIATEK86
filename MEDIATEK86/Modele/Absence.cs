@@ -11,7 +11,9 @@ namespace MEDIATEK86.Modele
     /// </summary>
     public class Absence
     {
-
+        /// <summary>
+        /// Déclaration des propriétés
+        /// </summary>
         private int IDPERSONNEL;
         private DateTime DATEDEBUT;
         private DateTime DATEFIN;

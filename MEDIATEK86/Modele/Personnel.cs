@@ -11,6 +11,9 @@ namespace MEDIATEK86.Modele
     /// </summary>
      public class Personnel
     {
+        /// <summary>
+        /// Déclaration des proprétés
+        /// </summary>
         private int IDPERSONNEL;
         private int IDSERVICE;
         private string NOM;

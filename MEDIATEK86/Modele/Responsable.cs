@@ -11,6 +11,9 @@ namespace MEDIATEK86.Modele
     /// </summary>
    public class Responsable
     {
+        /// <summary>
+        /// Déclaration des propriétés
+        /// </summary>
         private string login;
         private string pwd;
 

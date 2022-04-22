@@ -12,6 +12,9 @@ namespace MEDIATEK86.Modele
     /// </summary>
     public class Service
     {
+        /// <summary>
+        /// Déclaration des propriétés
+        /// </summary>
         private int IDSERVICE;
         private string NOM;
 
